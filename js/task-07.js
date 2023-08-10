@@ -8,6 +8,8 @@ const textEl = document.querySelector("#text");
 
 fontSizeControlEl.addEventListener("input", changesTheFontSize);
 
+textEl.style.fontSize = fontSizeControlEl.value + "px";
+
 function changesTheFontSize() {
   textEl.style.fontSize = fontSizeControlEl.value + "px";
 }
